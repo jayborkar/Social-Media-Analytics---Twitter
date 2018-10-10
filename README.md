@@ -8,7 +8,7 @@ We are creating a twitter app using https://apps.twitter.com . Once we create an
 
 ## Get the Twitter search Python script 
 
-We write script in Python to use the authentication keys to get data from twitter. The file twitter_search.py takes the auth.k as input which call the twitter and get us the data.
+We write script in Python to use the authentication keys to get data from twitter. The file twitter_search.py takes the auth.k as input which calls the twitter and get us the data.
 
 We run twitter_search.py python script using the configuration  python ./twitter_search.py brexit -c 180 where the third word (brexit)is the search term we want to run on Twitter. This searches brexit tweets and retrieve 180 tweets. The script writes the data in result.csv file having 6 columns – created time, retweet count, hashtag, followers count, friends count. We take different topics/politicians and re-run the python script to collect 180 tweets for each topics/politicians.
 
