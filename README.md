@@ -20,7 +20,7 @@ We use the dataset to see if there are any relationships among number of followe
 
 People express all kinds of opinions and sentiments on Twitter, so we analyse those sentiments. We write a script in python twitter_sentiments.py script to perform Sentiment Analysis for a topic/politician. 
 
-We use a package called TexBlob, which has a number of very useful functions for processing textual data.To use those functions, we need to convert a string (text) to an object of TextBlob type.
+We use a package called TextBlob, which has a number of very useful functions for processing textual data.To use those functions, we need to convert a string (text) to an object of TextBlob type.
 
 First, we collect some data as we did before. Next, we use the TextBlob package to go through the dataframe one row at a time and find the text – in this case a tweet stored in a variable/column named ‘text’. Once we have that tweet, convert it into a TextBlob object, and then we can ask it to analyze that string for subjectivity and polarity.
 
