@@ -1,4 +1,6 @@
-# Social-Media-Analytics - Twitter
+# Social-Media-Analytics - Twitter, Youtube, Yelp
+
+# Twitter
 
 ## Signing up for using Twitter APIs
 
@@ -27,3 +29,22 @@ First, we collect some data as we did before. Next, we use the TextBlob package 
 This script calculates the polarity and the subjectivity and adds in the data. The resulted file from this contains 10 columns: username, author id, created, text, retwc, hashtag, followers, friends, polarity, subjectivity. We change the query to different topics/politicians and re-run the python script to collect tweets and calculate polarity and subjectivity(sentiments) for each topics/politicians (Gun control).
 
 We create a new python script(TwitterGun.py) for analysing the above resulted file. We again find the correlation between variables in the resulted file. We create regression model, plot and line for varaibles having medium to high level positive/negative correlation. We check the R-square value and the p-value. Based on the regression plot and model, we state the hypothesis such as More the followers, more the tweets sentiment is becoming objective, as the subjectivity is getting close to zero.
+
+
+# Youtube
+
+## Signing up for using YouTube APIs
+
+Using YouTube API to access YouTube data.
+
+We are creating a project in Google API console for using Youtube API. We go to https://developers.google.com/api-client-library/python/start/get_started#setup to get started. Then we create API credentials for using the Youtube API.
+
+## Get the Youtube search Python script 
+
+We write script in Python to use the developer key to get data from Youtube. The file youtube_search.py takes the developer key get us the Youtube data.
+We run youtube_search.py python script using the configuration  python youtube_search.py --q superbowl where the fourth word (superbowl)is the search term we want to run on Youtube. We run youtube_search.py python script for each topics. The script is dumping information about title, videoId, viewCount, likeCount, dislikeCount, commentCount, and favoriteCount in youtube_results.csv file. We re-run the python script to collect data for each topics.
+ 
+## Regression Analysis
+
+We use the dataset to see if there are any relationships among viewCount, likeCount, dislikeCount, commentCount. We create a new python script (Youtube.py) for analysing the relationships. We find correlations among variables in the dataset. We create regression model, plot and line for varaibles having medium to high level positive/negative correlation. We check the R-square value and the p-value. Based on the regression plot and model, we state the hypothesis such as there is a relationship between likecount and commentcount.
+
