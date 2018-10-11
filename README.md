@@ -48,3 +48,16 @@ We run youtube_search.py python script using the configuration  python youtube_s
 
 We use the dataset to see if there are any relationships among viewCount, likeCount, dislikeCount, commentCount. We create a new python script (Youtube.py) for analysing the relationships. We find correlations among variables in the dataset. We create regression model, plot and line for varaibles having medium to high level positive/negative correlation. We check the R-square value and the p-value. Based on the regression plot and model, we state the hypothesis such as there is a relationship between likecount and commentcount.
 
+# Yelp
+
+## Get the Yelp data
+
+There are several kinds of datasets one could obtain from Yelp from this Website: https://www.yelp.com/dataset/challenge. Yelp is providing these datasets as a part of running various rounds of data challenges. We directly download it from Yelp.
+
+## Visualize the data
+
+We create bar chart, pie chart, histogram, scatter plot, stacked bar graph using R.
+
+## Regression Analysis
+
+We use the dataset to see if there are any relationships among reviewcount, cool_votes, useful_votes and funny_votes.. We create a R script (.R) for analysing the relationships. We find correlations among variables in the dataset. We create regression model, plot and line for varaibles having medium to high level positive/negative correlation. We check the R-square value and the p-value. Based on the regression plot and model, we state the hypothesis.
